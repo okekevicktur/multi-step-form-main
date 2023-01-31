@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(217, 100%, 97%);
+}
+
+.container{
+    background-color:  hsl(0, 0%, 100%);
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1.5fr 3fr;
+    width: 70%;
+    height: 80vh;
+    padding: 15px;
+}
+.sidebar{
+    /* background-color: green; */
+   
+    background-image: url(/assets/images/bg-sidebar-desktop.svg);
+    background-repeat: no-repeat;
+    /* background-size: auto; */
+    background-position: left bottom;
+    border-radius: 20px;
+    width: 80%;
+    /* height: 100%; */
+}
+.sidebar .steps{
+    width: 100%;
+    padding: 25px;
+
+    background-color: yellow;
+}
+.step1{
+    margin-bottom: 20px;
+}
+.step1 .circle{
+    border-radius: 40%;
+    border: 2px solid red;
+}
