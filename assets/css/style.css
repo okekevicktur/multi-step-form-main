@@ -9,10 +9,11 @@
 body{
     background-color: hsl(217, 100%, 97%);
     font-family: 'Ubuntu', sans-serif;
-    min-width: 50%;
+    width: 100%;
 }
 
 .container{
+    /* background-color: red; */
     background-color:  hsl(0, 0%, 100%);
     margin: 40px auto;
     display: grid;
@@ -22,6 +23,12 @@ body{
     padding: 15px;
     gap: 30px;
 }
+.mainwrapper{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    /* background-color: red; */
+  }
 /* #region .sidebar */
 .sidebar{
     
@@ -32,6 +39,7 @@ body{
     border-radius: 20px;
     width: 100%;
     height: 100%;
+    
 }
 .sidebar .steps{
     width: 100%;
@@ -88,7 +96,7 @@ body{
 .container .main{
     padding-top: 40px;
     /* background-color: green; */
-   min-width: 100%;
+   width: 100%;
 }
 .main-desc {
     margin-bottom: 1.8em;
@@ -104,7 +112,7 @@ body{
     color: hsl(231, 11%, 63%);
     font-weight: 500 ;
     word-wrap: break-word;
-    width: 90%;
+    width: 70%;
 }
 .options-wrapper{
     margin-bottom: 30px;
@@ -152,7 +160,6 @@ body{
 }
 .billing-type{
     
-    /* justify-items: center; */
     width: 100%;
     padding: 10px 50px;
     background-color: hsl(231, 100%, 99%);
@@ -199,12 +206,13 @@ body{
 }
 .footwrap{
     width: 70%;
+    display: block;
     /* background-color: red; */
 }
+
 .footer{
     display: flex;
-    width: 100%;
-    /* background-color: red; */
+    width: 70%;
     justify-content: space-between;
     color: hsl(231, 11%, 63%);
     font-weight: 700;
@@ -220,13 +228,95 @@ body{
 }
 /* #endregion .main */
 
-@media screen and ( min-width: 1200px){
+@media screen and ( max-width:800px){
+    body{
+        background-color: hsl(217, 100%, 97%);
+        font-family: 'Ubuntu', sans-serif;
+        /* width: 10vh; */
+        width:100%;
+    }
     .container{
-       /* width: 0%; */
-       margin: 60px auto;
-       /* Desktop: 1440px */
+            margin: 0 auto;
+            width: 100%;
+            display: block;
+            padding: 0;
+            margin: 0;
+            background-color: hsl(217, 100%, 97%);
     }
-    .main{
-        /* width: 50%; */
+    .mainwrapper{
+     
+        width: 90%;
+        margin: 0 auto;
+      }
+    .sidebar{
+    
+        background-image: url(/assets/images/bg-sidebar-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:top right ;
+        border-radius: 0;
+        width: 100%;
+        height: 172px;
+        /* background-color: yellow; */
     }
+    .sidebar .steps{
+        display: grid ;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 65%;
+        margin: auto ;
+       
+    }   
+    .step-info{
+        display: none;
+        /* margin-left: 20px; */
+    }
+    .container .main{
+        margin: -75px auto 0 auto;
+        background-color:  hsl(0, 0%, 100%);
+        /* background-color: green; */
+        padding: 30px 20px 5px;
+        /* padding-bottom: 10px ; */
+       width: 100% !important;
+       border-radius: 15px;
+       
+    }
+    .options-wrapper{
+        margin-bottom: 20px;
+        width: 100%;
+        display: block;
+        
+        /* flex-wrap: wrap; */
+    }
+    .options-wrapper .main-option:not(.arc){
+        margin: 15px 0;
+        width: 100%;
+        display: flex;
+    }
+    .arc{
+        width: 100%;
+        display: flex;
+      
+    }
+    .main-option .option{
+        margin-left: 1em;
+        margin-top: 0;
+    }
+    .billing-type{
+        padding: 10px 50px;
+        text-align: center;
+        
+        margin: 1.1em 0;
+        /* background-color: red; */
+    }
+    .footwrap{
+        width: 100%;
+       
+    }
+    .footer{
+        width: 100%;
+        margin: 15px 0 5px;
+        background-color:  hsl(0, 0%, 100%);
+        padding: 15px;
+    }
+  
 }
