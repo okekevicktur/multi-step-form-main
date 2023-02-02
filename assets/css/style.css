@@ -16,7 +16,7 @@ body{
 .container{
     /* background-color: red; */
     background-color:  hsl(0, 0%, 100%);
-    margin: 40px auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1.5fr 3fr;
     width: 80%;
@@ -319,6 +319,23 @@ body{
         margin: 15px 0 5px;
         background-color:  hsl(0, 0%, 100%);
         padding: 15px;
+    }
+    .switchwrap{
+        width: 2.5em;
+      
+        /* margin:auto 3px; */
+    }
+    .wrap{
+       
+        max-width: 100%;
+
+    }
+    .switch{
+        width: 2px;
+      
+        height: 2px;
+       
+        
     }
   
 }
